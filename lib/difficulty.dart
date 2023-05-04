@@ -11,7 +11,7 @@ class Difficulty extends StatelessWidget {
       appBar: AppBar(
         elevation: 2,
         backgroundColor: Colors.blue.shade700,
-        title: Text("Choose Difficulty"),
+        title: const Text("Choose Difficulty"),
       ),
       body: Column(
         children: [
@@ -22,7 +22,7 @@ class Difficulty extends StatelessWidget {
                 }));
               },
               child: tileCont("Easy")),
-          Divider(
+          const Divider(
             height: 2,
             thickness: 2,
           ),
@@ -33,7 +33,7 @@ class Difficulty extends StatelessWidget {
                 }));
               },
               child: tileCont("Normal")),
-          Divider(
+          const Divider(
             height: 2,
             thickness: 2,
           ),
@@ -43,7 +43,7 @@ class Difficulty extends StatelessWidget {
                   return DisplayQuestion(operation:operation,difficulty:"hard");
                 }));
               },child: tileCont("Hard")),
-          Divider(
+          const Divider(
             height: 2,
             thickness: 2,
           ),
@@ -54,10 +54,10 @@ class Difficulty extends StatelessWidget {
 
   Widget tileCont(String difficulty) {
     return Padding(
-      padding: EdgeInsets.fromLTRB(8, 10.0, 8.0, 2.0),
+      padding: const EdgeInsets.fromLTRB(8, 10.0, 8.0, 2.0),
       child: ListTile(
         title: Text(
-          "$difficulty",
+          difficulty,
           style: TextStyle(
               fontWeight: FontWeight.w400,
               fontSize: 25,

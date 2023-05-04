@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:quiz_app/displayQuestion.dart';
 import 'package:quiz_app/operation.dart';
-
-import 'difficulty.dart';
 
 void main() {
   runApp(const MyApp());

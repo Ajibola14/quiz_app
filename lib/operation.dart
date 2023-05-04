@@ -11,7 +11,7 @@ class Operation extends StatelessWidget {
       appBar: AppBar(
         elevation: 2,
         backgroundColor: Colors.blue.shade700,
-        title: Text("Choose Operation"),
+        title: const Text("Choose Operation"),
       ),
       body: Column(
         children: [
@@ -19,12 +19,12 @@ class Operation extends StatelessWidget {
               onTap: () {
                 Navigator.push(context, MaterialPageRoute(
                   builder: (context) {
-                    return Difficulty(operation: "+");
+                    return const Difficulty(operation: "+");
                   },
                 ));
               },
               child: tileCont("Addition", "+")),
-          Divider(
+          const Divider(
             height: 2,
             thickness: 2,
           ),
@@ -32,12 +32,12 @@ class Operation extends StatelessWidget {
               onTap: () {
                 Navigator.push(context, MaterialPageRoute(
                   builder: (context) {
-                    return Difficulty(operation: "-");
+                    return const Difficulty(operation: "-");
                   },
                 ));
               },
               child: tileCont("Substraction", "-")),
-          Divider(
+          const Divider(
             height: 2,
             thickness: 2,
           ),
@@ -45,12 +45,12 @@ class Operation extends StatelessWidget {
               onTap: () {
                 Navigator.push(context, MaterialPageRoute(
                   builder: (context) {
-                    return Difficulty(operation: "*");
+                    return const Difficulty(operation: "*");
                   },
                 ));
               },
               child: tileCont("Multiplication", "*")),
-          Divider(
+          const Divider(
             height: 2,
             thickness: 2,
           ),
@@ -58,12 +58,12 @@ class Operation extends StatelessWidget {
               onTap: () {
                 Navigator.push(context, MaterialPageRoute(
                   builder: (context) {
-                    return Difficulty(operation: "/");
+                    return const Difficulty(operation: "/");
                   },
                 ));
               },
               child: tileCont("Division", "/")),
-          Divider(
+          const Divider(
             height: 2,
             thickness: 2,
           ),
@@ -74,7 +74,7 @@ class Operation extends StatelessWidget {
 
   Widget tileCont(String operationStr, String operation) {
     return Padding(
-      padding: EdgeInsets.fromLTRB(8, 10.0, 8.0, 2.0),
+      padding: const EdgeInsets.fromLTRB(8, 10.0, 8.0, 2.0),
       child: ListTile(
         title: Text(
           "\u0087 $operationStr",
